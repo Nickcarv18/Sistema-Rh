@@ -4,4 +4,5 @@ export interface Vagas {
   foto: string;
   descricao: string;
   salario: number;
+  palavrasChaves: [];
 }

@@ -5,28 +5,50 @@
       "nome": "Desenvolvedor Front-end Júnior.",
       "foto": "foto1.jpg",
       "descricao": "Trabalhar com Angular e React",
-      "salario": "5200"
+      "salario": 5200,
+      "palavrasChaves": [
+        "Front-end",
+        "Júnior",
+        "Angular",
+        "React"
+      ]
     },
     {
       "id": 2,
       "nome": "Desenvolvedor Back-End Pleno",
       "foto": "foto2.jpg",
       "descricao": "Trabalhar com Spring Boot",
-      "salario": 7000
+      "salario": 7000,
+      "palavrasChaves": [
+        "Back-End",
+        "Spring Boot",
+        "Pleno"
+      ]
     },
     {
       "id": 3,
       "nome": "Desenvolvedor Fullstack Sênior",
       "foto": "foto3.jpg",
       "descricao": "Trabalhar com Angular e Spring Boot",
-      "salario": 10000
+      "salario": 10000,
+      "palavrasChaves": [
+        "Angular",
+        "Spring Boot",
+        "Fullstack"
+      ]
     },
     {
       "id": 4,
       "nome": "Designer Gráfico",
       "foto": "foto4.jpg",
       "descricao": "-Experiência comprovada em design gráfico \n\n-Sólido portfólio de ilustrações ou de outros elementos gráficos \n\n-Familiaridade com softwares e tecnologias de design (como InDesign, Illustrator, Dreamweaver, Photoshop) \n\n-Um olhar aguçado para estética e detalhes \n\n-Excelentes habilidades de comunicação \n\n-Capacidade de trabalhar metodicamente e cumprir prazos \n\n-Licenciatura em Design, Artes Plásticas ou áreas afins é uma vantagem ",
-      "salario": 12500
+      "salario": 12500,
+      "palavrasChaves": [
+        "Comunicação",
+        "Criatividade",
+        "Design gráfico",
+        "Photoshop"
+      ]
     }
   ]
 }
