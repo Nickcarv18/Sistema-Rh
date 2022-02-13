@@ -1,0 +1,17 @@
+<mat-nav-list>
+  <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+    <mat-icon>description</mat-icon> <span class="nav-caption">Vagas</span>
+  </a>
+  <mat-list-item [matMenuTriggerFor]="menu">
+    <mat-icon>
+      settings
+    </mat-icon>
+    <a matline> &nbsp; Controle de Vagas</a>
+  </mat-list-item>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="vagas/cadastrar">
+      <mat-icon>add_circle</mat-icon>
+      Cadastrar
+    </button>
+  </mat-menu>
+</mat-nav-list>
