@@ -1,0 +1,19 @@
+.titulo{
+  margin-top: 10px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.card{
+  margin: 16px;
+}
+
+@media (max-width: 520px) {
+  mat-card mat-card-title-group img{
+    display: none !important;
+  }
+
+  mat-chip-list{
+    display: none !important;
+  }
+}

@@ -1,0 +1,30 @@
+<h1 class="titulo">Lista de vagas</h1>
+
+<ng-container fxLayout="row" fxLayoutAlign="space-around stretch">
+  <div class="card" *ngFor="let vaga of vagas; let i = index">
+    <mat-card>
+      <mat-card-title-group>
+        <mat-card-title>{{ vaga.nome }}</mat-card-title>
+        <mat-card-subtitle>{{ vaga.salario | currency: 'BRL'}}</mat-card-subtitle>
+        <img mat-card-lg-image src="../../../assets/img/vagas/{{vaga.foto}}">
+      </mat-card-title-group>
+      <mat-card-content style="margin: 20px 0 20px 0">
+        {{ vaga.descricao }}
+
+        <div fxLayout="row">
+          <mat-chip-list *ngFor="let palavraChave of vaga.palavrasChaves; let i = index">
+            <mat-chip color="warn" selected style="margin: 16px 16px 0 0;">{{ palavraChave }}</mat-chip>
+          </mat-chip-list>
+        </div>
+      </mat-card-content>
+      <mat-card-actions fxLayout="row" fxLayoutAlign="end stretch">
+        <button mat-mini-fab color="accent" routerLink="/vagas/atualizar/{{vaga.id}}" style="margin: 5px;">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-mini-fab color="warn" (click)="deletarVaga(i)" style="margin: 5px;">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</ng-container>
